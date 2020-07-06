@@ -1,6 +1,6 @@
 class ImageFill {
   static fill(grabfrom) {
-    if (grabfrom == undefined || grabfrom == null || 0 === str.length) return;
+    if (grabfrom == undefined || grabfrom == null || 0 === grabfrom.length) return;
     fetch(grabfrom).then(function (response) {
       if (response.status === 200) {
         response.json().then(function (data) {
